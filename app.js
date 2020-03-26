@@ -1,8 +1,13 @@
 'use strict';
+/*
+* フィボナッチ関数
+*/
+
+'use strict';
 const memo = new Map();
 memo.set(0, 0);
 memo.set(1, 1);
-function fib(n) {
+let fib = (n) => {
     if (memo.has(n)) {
         return memo.get(n);
     }
